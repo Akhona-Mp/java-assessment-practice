@@ -16,8 +16,12 @@ src/
 │   │           │   └── Fundamentals.java
 │   │           ├── quotes/
 │   │           │   └── QuoteSystem.java
-│   │           └── patterns/
-│   │               └── Patterns.java
+│   │           ├── patterns/
+│   │           │   └── Patterns.java
+│   │           ├── datastructures/
+│   │           │   └── DataStructures.java
+│   │           └── algorithms/
+│   │               └── Algorithms.java
 │   └── resources/
 │       └── wethinkcode/
 │           └── assessments/
@@ -31,8 +35,12 @@ src/
                 │   └── FundamentalsTest.java
                 ├── quotes/
                 │   └── QuoteSystemTest.java
-                └── patterns/
-                    └── PatternsTest.java
+                ├── patterns/
+                │   └── PatternsTest.java
+                ├── datastructures/
+                │   └── DataStructuresTest.java
+                └── algorithms/
+                    └── AlgorithmsTest.java
 ```
 
 ## Assessments
@@ -64,6 +72,28 @@ The third assessment focuses on drawing various patterns. Students need to imple
 - Generate prime number sequences
 - Calculate Pascal's triangle
 
+### 4. Data Structures
+
+The fourth assessment focuses on implementing common data structures. Students need to implement methods in the `DataStructures` class to:
+
+- Implement a Stack data structure (LIFO)
+- Implement a Queue data structure (FIFO)
+- Implement a LinkedList data structure
+- Reverse a linked list
+- Check if a string has balanced parentheses
+
+### 5. Algorithms
+
+The fifth assessment focuses on implementing common algorithms. Students need to implement methods in the `Algorithms` class to:
+
+- Implement sorting algorithms (bubble sort, merge sort)
+- Implement binary search
+- Generate Fibonacci numbers
+- Check if a number is prime
+- Find prime numbers using the Sieve of Eratosthenes
+- Calculate the greatest common divisor (GCD) using the Euclidean algorithm
+- Calculate the least common multiple (LCM)
+
 ## Running the Tests
 
 To run the tests, use Maven:
@@ -78,6 +108,8 @@ To run tests for a specific assessment:
 mvn test -Dtest=FundamentalsTest
 mvn test -Dtest=QuoteSystemTest
 mvn test -Dtest=PatternsTest
+mvn test -Dtest=DataStructuresTest
+mvn test -Dtest=AlgorithmsTest
 ```
 
 ## Notes for Students
