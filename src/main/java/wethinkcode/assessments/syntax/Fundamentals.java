@@ -12,8 +12,11 @@ public class Fundamentals {
      * @return The date of birth in format DD/MM/YY
      */
     public static String getDateOfBirth(String idNumber) {
+        String day = idNumber.substring(4,6);
+        String month = idNumber.substring(2,4);
+        String year = idNumber.substring(0,2);
         // TODO: Implement this method
-        return null;
+        return day+"/"+month +"/"+year;
     }
 
     /**
@@ -27,12 +30,14 @@ public class Fundamentals {
      * @return "Male" or "Female"
      */
     public static String getGender(String idNumber) {
+
+        String gender = Integer.parseInt(idNumber.substring(6,7))<5?"Female":"Male";
         // TODO: Implement this method
-        return null;
+        return gender;
     }
 
     /**
-     * Question 3: Extract the citizenship from the ID number using the formula below and
+//     * Question 3: Extract the citizenship from the ID number using the formula below and
      * return it as a string
      *
      * Formula: If the ID number's 11th digit is 0, the person is a South African citizen
@@ -43,7 +48,8 @@ public class Fundamentals {
      */
     public static String getCitizenship(String idNumber) {
         // TODO: Implement this method
-        return null;
+        String citizen = Integer.parseInt(idNumber.substring(10,11))==0?"South African":"Non-South African";
+        return citizen;
     }
 
     /**
@@ -53,9 +59,16 @@ public class Fundamentals {
      * For numbers that are multiples of both 3 and 5, it prints "FizzBuzz".
      *
      * @param n The upper limit of numbers to process
+     * @return
      */
-    public static void fizzbuzz(int n) {
+    public static String fizzbuzz(int n) {
         // TODO: Implement this method
+        if(n%3==0){
+            return "Fizz";
+        }else if(n%5==0){
+            return "Buzz";
+        }else
+            return null;
     }
 
     /**

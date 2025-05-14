@@ -2,12 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/previous-assessments/fun-000-syntax" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/previous-assessments/fun-001-quotes" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/previous-assessments/fun-002-patterns" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/previous-assessments/fun-002-patterns-b" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/previous-assessments/fun-003-data-structures" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/previous-assessments/functions" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/previous-assessments/fundamentals-000" vcs="Git" />
   </component>
 </project>
